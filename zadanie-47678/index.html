@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="Imię">Imię</label><br>
+        <input type="text" id="Imię" name="fname"><br>
+        <label for="Nazwisko">Nazwisko</label><br>
+        <input type="text" id="Nazwisko" name="Nazwisko"><br><br>
+        <label for="email">twój email</label><br>
+        <input name="Email" id="email" type="email"><br>
+    </form><br>
+    <label for="telefon">telefon</label><br>
+    <input type="text" id="telefon" name="contact"><br>
+    <label for="wybór miasta">wybór miasta</label><br>
+    <select name="wybór miasta" id="miasto">
+        <option value="a">Warszawa</option>
+        <option value="b">Kraków</option>
+        <option value="c">Gdańsk</option>
+    </select><br>
+    <label>
+        <input type="radio" name="płeć" value="m"> Mężczyzna
+
+    </label><br>
+
+    <label>
+        <input type="radio" name="płeć" value="k"> Kobieta
+    </label><br>
+
+    <input type="checkbox" id="zazn">
+    <label for="zazn">Akceptuję regulamin</label><br>
+
+    <textarea name="treść" id="treść" cols="30" rows="10"></textarea><br>
+
+
+    <form action="https://formspree.io/f/{form_id}" method="post">
+
+
+        <button type="submit">wyślij</button>
+    </form>
+
+    </form>
+
+
+</body>
+
+</html>
+
+
+
+<!-- Stwórz formularz, który pozwoli na zapis uczestnika na szkolenie - pola:
+
+- imię
+- nazwisko
+- mail
+- telefon
+- wybór miasta (Kraków, Warszawa, Gdańsk) - select
+- płeć - radio
+- zgoda na dane osobowe - checkbox
+- wiadomość - textarea
+
+Zadanie wyślij za pomocą GitHub Pages. -->
