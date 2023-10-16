@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    background-color: lime;
+    flex-wrap: wrap;
+}
+
+.text {
+    background-color: skyblue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+
+.header {
+    flex-basis: 100%;
+    order: 0;
+    background-color: red;
+    color: white;
+
+    text-align: center;
+}
+
+.left {
+    flex-basis: 20%;
+    order: 1;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 0;
+}
+
+.container {
+    flex-basis: 60%;
+    order: 2;
+}
+
+.right {
+    flex-basis: 20%;
+    order: 3;
+    background-color: pink;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 0;
+
+}
+
+.footer {
+    flex-basis: 100%;
+    order: 4;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-basis: 100%;
+        order: 0;
+    }
+
+    .container {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .left {
+        flex-basis: 100%;
+        order: 2;
+    }
+
+    .right {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    .footer {
+        flex-basis: 100%;
+        order: 4;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .header {
+        flex-basis: 100%;
+        order: 0;
+    }
+
+    .container {
+        flex-basis: 60%;
+        order: 2;
+    }
+
+    .left {
+        flex-basis: 20%;
+        order: 1;
+    }
+
+    .right {
+        flex-basis: 20%;
+        order: 3;
+    }
+
+    .footer {
+        flex-basis: 100%;
+        order: 4;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .header {
+        flex-basis: 100%;
+        order: 0;
+    }
+
+    .container {
+        flex-basis: 80%;
+        order: 1;
+    }
+
+
+    .right {
+        flex-basis: 20%;
+        order: 2;
+    }
+
+    .left {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+
+
+    .footer {
+        flex-basis: 100%;
+        order: 4;
+    }
+
+
+}
