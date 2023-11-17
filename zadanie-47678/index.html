@@ -9,17 +9,17 @@
 
 <body>
 
-    <form>
-        <label for="Imie">Imie</label><br>
-        <input type="text" id="Imie" name="fname"><br>
-        <label for="Nazwisko">Nazwisko</label><br>
-        <input type="text" id="Nazwisko" name="Nazwisko"><br><br>
+    <form action="https://formspree.io/f/{form_id}" method="post">
+        <label for="imie">Imie</label><br>
+        <input type="text" id="imie" name="fname"><br>
+        <label for="nazwisko">Nazwisko</label><br>
+        <input type="text" id="nazwisko" name="Nazwisko"><br><br>
         <label for="email">twój email</label><br>
         <input name="Email" id="email" type="email"><br>
         <br>
         <label for="telefon">telefon</label><br>
         <input type="text" id="telefon" name="contact"><br>
-        <label for="wybór miasta">wybór miasta</label><br>
+        <label for="miasto">wybór miasta</label><br>
         <select name="wybór miasta" id="miasto">
             <option value="a">Warszawa</option>
             <option value="b">Kraków</option>
@@ -37,14 +37,14 @@
         <input type="checkbox" id="zazn">
         <label for="zazn">Akceptuję regulamin</label><br>
 
-        <textarea name="treść" id="treść" cols="30" rows="10"></textarea><br>
+        <textarea name="treść" id="tresc" cols="30" rows="10"></textarea><br>
 
 
-        <input action="https://formspree.io/f/{form_id}" method="post">
+        <input>
 
 
         <button type="submit">wyślij</button>
-        </input>
+        <input>
 
     </form>
 
